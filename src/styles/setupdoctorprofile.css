@@ -1,0 +1,104 @@
+/* src/styles/setupdoctorprofile.css */
+
+.setup-doctor-profile {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  .profile-container {
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  .title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .dropdown {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .availability-group {
+    margin-bottom: 20px;
+  }
+  
+  .day-label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .time-slot {
+    margin-bottom: 15px;
+  }
+  
+  .time-input-group {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  
+  .input-time {
+    width: 120px; /* Adjust width to fit with period selector */
+  }
+  
+  .dropdown-period {
+    width: 80px; /* Fixed width for period selector */
+  }
+  
+  .submit-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #000042;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+  }
+  
+  .submit-button:hover {
+    background-color: #000042 ;
+  }
+  
+  .time-slot button {
+    margin-top: 10px;
+    padding: 8px 12px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .time-slot button:hover {
+    background-color: #218838;
+  }
+  

@@ -1,0 +1,83 @@
+/* src/styles/login.css */
+
+.landing-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #99E8CB;
+  padding: 0 20px;
+}
+
+.main-heading {
+  color: black;
+  font-size: 40px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  letter-spacing: -2.16px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form-container {
+  background-color: #ffffff;
+  border: 1px solid #d9d9d9;
+  border-radius: 8px;
+  padding: 24px;
+  width: 80%;
+  max-width: 600px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-group {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  color: #1e1e1e;
+  font-size: 16px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.form-group input,.role-dropdown {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #d9d9d9;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #b3b3b3;
+}
+
+.sign-up-button {
+  background-color: #0f0f0f;
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.links {
+  text-align: center;
+}
+
+.links a {
+  color: #1e1e1e;
+  font-size: 16px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  text-decoration: underline;
+  margin: 0 10px;
+}
