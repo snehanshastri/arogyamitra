@@ -1,0 +1,249 @@
+/* Main Container */
+.dashboard-container {
+  display: flex;
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  height: 100vh; /* Ensure it takes full screen height */
+  width: 100vw; /* Ensure it takes full screen width */
+  background-color: #f9f9f9;
+  overflow: hidden; /* Prevent overflowing content from the container */
+}
+
+/* Sidebar */
+.sidebar {
+  width: 20%;
+  background-color: #e0e6ef;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Align items to the top */
+  overflow-y: auto; /* Scrollable sidebar */
+}
+
+.sidebar h2 {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar ul li {
+  font-size: 18px;
+  padding: 10px 0;
+  cursor: pointer;
+  margin-bottom: 5px;
+  background-color: #dfe3ea;
+  border-radius: 4px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar ul li:hover {
+  background-color: #cfd6e2;
+}
+
+.sidebar-general {
+  margin-top: 20px; /* Slight gap between ul and general support */
+}
+
+.sidebar-general p {
+  font-size: 16px;
+  padding: 8px 0;
+  cursor: pointer;
+  text-align: center;
+  background-color: #f1f3f5;
+  border-radius: 4px;
+}
+
+.sidebar-general p:hover {
+  background-color: #e2e5ea;
+}
+
+.logout-btn {
+  background-color: #d9534f;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  margin-top: auto;
+  transition: background-color 0.3s ease;
+}
+
+.logout-btn:hover {
+  background-color: #c9302c;
+}
+
+/* Main Content */
+.main-content {
+  width: 80%;
+  padding: 20px;
+  overflow-y: auto; /* Make the main content scrollable */
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.user-info {
+  text-align: right;
+}
+
+.user-info p {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Appointments Section */
+.appointments-section {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.section-header h3 {
+  margin: 0;
+}
+
+.new-appointment {
+  background-color: #3367d6;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.new-appointment:hover {
+  background-color: #2a56ab;
+}
+
+.appointment-times {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.appointment {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  background-color: #f7f7f7;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.appointment.upcoming {
+  background-color: #eaf4fe;
+}
+
+.appointment.completed {
+  background-color: #d4edda;
+}
+
+.appointment.cancelled {
+  background-color: #f8d7da;
+}
+
+.appointment-details {
+  flex-grow: 1;
+  padding-left: 10px;
+}
+
+.complete-btn {
+  background-color: #3367d6;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.complete-btn:hover {
+  background-color: #2a56ab;
+}
+
+.complete-btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 1200px) {
+  .dashboard-container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    text-align: center;
+  }
+
+  .main-content {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .user-info {
+    text-align: left;
+    margin-top: 10px;
+  }
+
+  .section-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .new-appointment {
+    margin-top: 10px;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .sidebar ul li {
+    font-size: 16px;
+  }
+
+  .sidebar-general p {
+    font-size: 14px;
+  }
+
+  .new-appointment {
+    padding: 8px 15px;
+  }
+
+  .complete-btn {
+    padding: 5px 8px;
+  }
+
+  .appointment {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

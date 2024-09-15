@@ -1,0 +1,14 @@
+.history-container {
+    padding: 20px;
+  }
+  
+  .history-list {
+    margin-top: 10px;
+  }
+  
+  .history-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
