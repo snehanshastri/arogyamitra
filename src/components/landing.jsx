@@ -1,6 +1,6 @@
 
 import React from 'react';
-import '../styles/landing.css';
+import './landing.css';
 import { useNavigate } from 'react-router-dom';
 
 function Landing() {
@@ -13,13 +13,13 @@ function Landing() {
     <div className="landing">
       <div className="image-container">
         <div className="image-wrapper">
-          <img src="https://designerapp.officeapps.live.com/designerapp/document.ashx?path=/e0772523-250c-47f2-8b09-0d44b0b282ea/DallEGeneratedImages/dalle-caa4dbb9-437e-4651-804f-809f942a4b9f0251677035242579623300.jpg&dcHint=JapanEast&fileToken=5070aed1-6a59-4a4b-892d-fa48eeaf87b4" alt="Arogya Mitra 1" className="background-image" />
+          <img src="https://designerapp.officeapps.live.com/designerapp/document.ashx?path=/01d0ccf5-2ac5-435c-aa78-945db33d62a5/DallEGeneratedImages/dalle-f2b53597-5b63-49c7-b179-dba9c76020810251676238715002212300.jpg&dcHint=KoreaCentral&fileToken=0a6d812f-c8f1-4a9d-9f62-34b0056dcc48" alt="Arogya Mitra 1" className="background-image" />
           <div className="overlay"></div>
           <div className="content">
           </div>
         </div>
         <div className="image-wrapper">
-          <img src="https://designerapp.officeapps.live.com/designerapp/document.ashx?path=/e0772523-250c-47f2-8b09-0d44b0b282ea/DallEGeneratedImages/dalle-378244b4-5ec2-4040-99c9-45f9028a41360251677035242579623300.jpg&dcHint=JapanEast&fileToken=5070aed1-6a59-4a4b-892d-fa48eeaf87b4" alt="Arogya Mitra 2" className="background-image" />
+          <img src="https://designerapp.officeapps.live.com/designerapp/document.ashx?path=/01d0ccf5-2ac5-435c-aa78-945db33d62a5/DallEGeneratedImages/dalle-ba73a227-89c5-4aba-8455-5dfc40faeff50251676238562178204600.jpg&dcHint=KoreaCentral&fileToken=0a6d812f-c8f1-4a9d-9f62-34b0056dcc48" alt="Arogya Mitra 2" className="background-image" />
           <div className="overlay"></div>
           <div className="content">
             <h1>Arogya Mitra</h1>
@@ -27,7 +27,7 @@ function Landing() {
           </div>
         </div>
         <div className="image-wrapper">
-          <img src="https://designerapp.officeapps.live.com/designerapp/document.ashx?path=/e0772523-250c-47f2-8b09-0d44b0b282ea/DallEGeneratedImages/dalle-1db749f6-75c5-44e9-923c-b5adf4eef1b90251677035295799270200.jpg&dcHint=JapanEast&fileToken=5070aed1-6a59-4a4b-892d-fa48eeaf87b4" alt="Arogya Mitra 3" className="background-image" />
+          <img src="https://designerapp.officeapps.live.com/designerapp/document.ashx?path=/01d0ccf5-2ac5-435c-aa78-945db33d62a5/DallEGeneratedImages/dalle-34cbcd39-273e-43d9-90ad-380e3c0c541d0251676237573276162800.jpg&dcHint=KoreaCentral&fileToken=0a6d812f-c8f1-4a9d-9f62-34b0056dcc48" alt="Arogya Mitra 3" className="background-image" />
           <div className="overlay"></div>
           <div className="content">
           </div>
