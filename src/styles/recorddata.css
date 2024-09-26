@@ -1,0 +1,235 @@
+.dashboard-container {
+  display: flex;
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  height: 100vh; /* Ensure it takes full screen height */
+  width: 100vw; /* Ensure it takes full screen width */
+  background-color: #f9f9f9;
+  overflow: hidden; /* Prevent overflowing content from the container */
+}
+
+/* Sidebar */
+.sidebar {
+  width: 20%;
+  background-color: #e0e6ef;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow-y: auto; /* Scrollable sidebar */
+}
+
+.sidebar h2 {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  font-size: 18px;
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+.sidebar ul li:hover {
+  background-color: #d0d9e6;
+  border-radius: 5px;
+}
+
+.sidebar-general p {
+  font-size: 16px;
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+.logout-btn {
+  background-color: #d9534f;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+
+/* Updated Modal Styling for Small Centered Window */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 300px; /* Small window size */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Adds a slight shadow */
+  text-align: center;
+}
+
+.modal-content h2 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.modal-content button {
+  padding: 8px 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.modal-content button:hover {
+  background-color: #45a049;
+}
+
+.logout-btn:hover {
+  background-color: #c9302c;
+}
+
+/* Main Content */
+.main-content {
+  width: 80%;
+  padding: 20px;
+  overflow-y: auto; /* Make the main content scrollable */
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.search-bar {
+  width: 40%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.user-info {
+  text-align: right;
+}
+
+.user-info p {
+  margin: 0;
+}
+
+/* Record Data Section */
+.record-data-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.record-item {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  background-color: #fefefe;
+  position: relative;
+}
+
+.record-item textarea {
+  width: 100%;
+  height: 60px;
+  margin-bottom: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  resize: vertical;
+}
+
+.submit-btn,
+.edit-btn,
+.billing-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+.submit-btn:hover,
+.edit-btn:hover,
+.billing-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 1200px) {
+  .dashboard-container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    text-align: center;
+  }
+
+  .main-content {
+    width: 100%;
+  }
+
+  .search-bar {
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .search-bar {
+    width: 80%;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .user-info {
+    text-align: left;
+    margin-top: 10px;
+  }
+
+  .record-data-container {
+    margin-top: 10px;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .search-bar {
+    width: 100%;
+  }
+
+  .sidebar ul li {
+    font-size: 16px;
+  }
+
+  .sidebar-general p {
+    font-size: 14px;
+  }
+
+  .record-data-container {
+    padding: 15px;
+  }
+}
