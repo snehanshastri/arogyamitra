@@ -5,6 +5,7 @@ import React, { useState } from 'react';
 import '../styles/setupdoctorprofile.css';
 import { firestore, doc, setDoc } from './firebase'; // Import Firestore functions
 import { getAuth } from 'firebase/auth';
+import { useNavigate } from 'react-router-dom';
 const SetupDoctorProfile = () => {
   const [name, setName] = useState('');
   const [contactNumber, setContactNumber] = useState('');
@@ -37,6 +38,8 @@ const SetupDoctorProfile = () => {
       [day]: newAvailability
     }));
   };
+  const navigate = useNavigate();
+  
 
   const addTimeSlot = (day) => {
     setAvailability(prevState => ({
@@ -65,6 +68,7 @@ const SetupDoctorProfile = () => {
         clinicAddress,
         specialisation,
         availability
+      
       });
 
       alert('Profile setup successfully!');
@@ -73,7 +77,9 @@ const SetupDoctorProfile = () => {
       console.error('Error saving profile data:', error.message);
       alert('Failed to save profile data.');
     }
+    navigate('/clinicdashboard');
   };
+ 
 
   return (
     <div className="setup-doctor-profile">
@@ -189,7 +195,7 @@ const SetupDoctorProfile = () => {
               </div>
             ))}
           </div>
-          <button className="submit-button" type="submit">Submit</button>
+          <button onClick={handleSubmit} className="submit-button" type="submit">Submit</button>
         </form>
       </div>
     </div>
