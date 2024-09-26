@@ -1,51 +1,78 @@
+/* doctor-detail.css */
+
 .doctor-detail-container {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start; /* Align content to the top */
-  height: 100vh;
-  overflow: auto; /* Keeps the scrolling functionality */
-  padding: 40px 20px; /* Added top padding for extra space */
-  margin: 200px 400px;
-}
-
-.doctor-detail-card {
-  background-color: #fff;
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  max-width: 400px;
-  width: 100%;
-  text-align: center;
-  margin-top: 20px; /* Ensures some gap at the top */
-}
-
-.doctor-detail-card h2 {
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-.doctor-detail-card p {
-  margin: 5px 0;
-}
-
-.availability-section {
-  margin: 20px 0;
-}
-
-.calendar-section {
-  margin: 20px 0;
-}
-
-.request-button {
-  background-color: #007bff;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  margin-top: 10px;
-}
-
-.request-button:hover {
-  background-color: #0056b3;
-}
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align content to the top */
+    height: 100vh;
+    overflow: auto; /* Keeps the scrolling functionality */
+    padding: 40px 20px; /* Added padding for extra space */
+    margin: 0; /* Removed margin to avoid potential layout issues */
+  }
+  
+  .doctor-detail-card {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px; /* Ensures some gap at the top */
+  }
+  
+  .doctor-detail-card h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .doctor-detail-card p {
+    margin: 5px 0;
+  }
+  
+  .availability-section {
+    margin: 20px 0;
+  }
+  
+  .calendar-section {
+    margin: 20px 0;
+  }
+  
+  .request-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    display: inline-block; /* Ensure the button is treated as an inline element */
+    font-size: 16px; /* Adjust font size if needed */
+    text-align: center; /* Center text inside the button */
+  }
+  
+  .request-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Success message styles */
+  .success-message {
+    margin-top: 20px;
+    font-size: 16px;
+  }
+  
+  .success-message button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  
+  .success-message button:hover {
+    background-color: #0056b3;
+  }
+  
