@@ -4,7 +4,8 @@ import { collection, query, where, getDocs, addDoc } from 'firebase/firestore';
 import { auth, firestore } from './firebase'; // Ensure you have access to auth for user UID
 import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
-import './doctorDetail.css';
+
+import '../styles/doctordetail.css';
 
 const DoctorDetail = () => {
   const { clinicName } = useParams();
