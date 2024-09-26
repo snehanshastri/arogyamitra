@@ -1,0 +1,142 @@
+/* Clinic Dashboard Styling */
+.dashboard-container {
+  display: flex;
+  height: 100vh;
+  background-color: #f4f4f4;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  background-color: #004d80;
+  color: #00004B;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.sidebar h2 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin: 20px 0;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.sidebar ul li:hover {
+  text-decoration: underline;
+}
+
+.sidebar-general {
+  text-align: center;
+}
+
+.logout-btn {
+  padding: 10px 20px;
+  margin-top: 10px;
+  background-color: #ff4d4d;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.logout-btn:hover {
+  background-color: #ff6666;
+}
+
+/* Main Content */
+.main-content {
+  flex: 1;
+  padding: 20px;
+  background-color: #ffffff;
+  overflow-y: auto;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.search-bar {
+  padding: 10px;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.user-info p {
+  margin: 5px 0;
+}
+
+/* Appointments Section */
+.appointments-container {
+  display: flex;
+  gap: 20px;
+}
+
+/* Two column layout for appointments */
+.appointments-section,
+.approve-appointment-section {
+  flex: 1;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.section-header h3 {
+  margin-bottom: 15px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.appointment-request {
+  background-color: white;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.completed-btn,
+.approve-btn {
+  padding: 8px 16px;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.completed-btn:hover,
+.approve-btn:hover {
+  background-color: #0056b3;
+}
+
+.view-all {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  cursor: pointer;
+  color: #007bff;
+}
+
+.view-all:hover {
+  text-decoration: underline;
+}
