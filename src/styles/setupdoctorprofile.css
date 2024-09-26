@@ -1,15 +1,18 @@
 /* src/styles/setupdoctorprofile.css */
 
 .setup-doctor-profile {
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  max-height: 100vh; /* Limit the height to the viewport height */
+  overflow-y: auto; 
   }
   
   .profile-container {
     max-width: 600px;
     margin: auto;
+    padding-bottom: 30px;
   }
   
   .title {
