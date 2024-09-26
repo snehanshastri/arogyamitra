@@ -1,134 +1,94 @@
 /* Container for the entire landing section */
 .landing {
-  width: 100vw; /* Full width */
-  height: 100vh; /* Full height */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  overflow: hidden;
-}
-
-/* Flex container for images */
-.image-container {
-  display: flex;
-  width: 100%;
-  height: 100%; /* Ensure full height */
-  justify-content: center;
-}
-
-/* Wrapper for each individual image */
-.image-wrapper {
-  position: relative;
-  flex: 1; /* Equal width for each image */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-}
-
-/* Image styling */
-.background-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Cover the entire container */
-}
-
-/* Black transparent overlay */
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.6); /* Black with 60% opacity */
-  z-index: 1; /* Ensure overlay is on top of the image */
-}
-
-/* Text content positioned on top of images */
-.content {
-  position: absolute;
-  z-index: 2; /* Above overlay */
-  color: white;
-  text-align: center;
-}
-
-.content h1 {
-  font-size: 4em;
-  font-weight: 700;
-  margin: 0;
-  line-height: 1.2;
-}
-
-.content h2 {
-  font-size: 1.5em;
-  font-weight: 400;
-  margin: 10px;
-  line-height: 1.2;
-}
-
-/* Proceed button styling */
-.proceed-button {
-  position: fixed;
-  bottom: 20px; /* Fixed 20px from bottom */
-  left: 50%;
-  transform: translateX(-50%); /* Center horizontally */
-  padding: 10px 20px;
-  background-color: black;
-  color: white;
-  border: none;
-  border-radius: 25px;
-  font-size: 1.2em;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  z-index: 3; /* Above content and overlay */
-}
-
-/* Button hover effect */
-.proceed-button:hover {
-  background-color: #333;
-}
-
-/* Responsive adjustments */
-@media (max-width: 1024px) {
-  .content h1 {
-    font-size: 3em;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   
-  .content h2 {
-    font-size: 1.2em;
-  }
-}
-
-@media (max-width: 768px) {
+  /* Flex container for images */
   .image-container {
-    flex-direction: column; /* Stack images vertically on smaller screens */
+    display: flex;
+    width: 100%;
+    height: 100%;
   }
-
+  
+  /* Wrapper for each individual image */
+  .image-wrapper {
+    position: relative;
+    flex: 1; /* Equal width for each image */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  
+  /* Image styling */
+  .background-image {
+    width: 100%;
+    height: 100%;
+    /* object-fit: contain; Ensure the entire image is visible without cropping */
+  }
+  
+  /* Black transparent overlay */
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Black with 60% opacity */
+  }
+  
+  /* Text content positioned on top of images */
+  .content {
+    position: absolute;
+    z-index: 1;
+    color: white;
+    text-align: center;
+  }
+  
   .content h1 {
-    font-size: 2.5em; /* Adjusted for smaller screens */
+    font-size: 4em;
+    font-weight: 700;
+    margin: 0;
+    line-height: 1.2;
   }
-
-  .content h2 {
-    font-size: 1.2em;
+  .content h2{
+    font-size: 1.5em;
+    font-weight: 400;
+    margin: 10px;
+    line-height: 1.2;
   }
-
   .proceed-button {
-    font-size: 1.1em; /* Slightly smaller button on mobile */
+    position: fixed;
+    bottom: 20px; /* Space from the bottom */
+    left: 50%;
+    transform: translateX(-50%); /* Center horizontally */
+    padding: 10px 20px;
+    background-color: black; /* Black background */
+    color: white; /* White text */
+    border: none; /* Remove default border */
+    border-radius: 25px; /* Rounded edges */
+    font-size: 1.2em; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
   }
-}
-
-@media (max-width: 480px) {
-  .content h1 {
-    font-size: 2em;
+  
+  /* Button hover effect */
+  .proceed-button:hover {
+    background-color: #333; /* Slightly lighter black on hover */
   }
-
-  .content h2 {
-    font-size: 1em;
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .image-container {
+      flex-direction: column;
+    }
+  
+    .content h1 {
+      font-size: 1.5em;
+    }
   }
-
-  .proceed-button {
-    font-size: 1em;
-  }
-}
+  
